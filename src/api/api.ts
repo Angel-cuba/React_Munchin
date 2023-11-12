@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://staffmun-cfa0732aa74e.herokuapp.com/api';
+const BASE_URL = 'https://staffmun-cfa0732aa74e.herokuapp.com/api' || 'http://localhost:3001/api';
 
 export const loginUser = async (email: string, password: string) => {
   const response = await axios.post(`${BASE_URL}/login`, {
